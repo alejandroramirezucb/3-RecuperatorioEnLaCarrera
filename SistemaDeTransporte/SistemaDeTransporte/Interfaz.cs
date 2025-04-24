@@ -19,6 +19,7 @@ public static class Interfaz
             if (!int.TryParse(Console.ReadLine(), out int opcion))
             {
                 Console.WriteLine("\nERROR: Entrada invalida.");
+                Console.WriteLine("\nApriete una tecla para regresar...");
                 Console.ReadKey();
                 continue;
             }
@@ -30,11 +31,13 @@ public static class Interfaz
 
                 case 2:
                     registro.MostrarTransportes();
+                    Console.WriteLine("\nApriete una tecla para regresar...");
                     Console.ReadKey();
                     break;
 
                 case 3:
                     registro.MoverTodos();
+                    Console.WriteLine("\nApriete una tecla para regresar...");
                     Console.ReadKey();
                     break;
                 case 4:
@@ -42,6 +45,7 @@ public static class Interfaz
                     break;
                 default:
                     Console.WriteLine("\nERROR: Opcion no valida.");
+                    Console.WriteLine("\nApriete una tecla para regresar...");
                     Console.ReadKey();
                     break;
             }
@@ -103,6 +107,7 @@ public static class Interfaz
         {
             Console.WriteLine("\nERROR: No se pudo crear el transporte");
         }
+        Console.WriteLine("\nApriete una tecla para regresar...");
         Console.ReadKey();
     }
 }
